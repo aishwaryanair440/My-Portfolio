@@ -238,7 +238,7 @@ export function Contact() {
           }}
         />
         <p className="text-xl font-bold">AISHWARYA A NAIR</p>
-        <p className="text-base font-medium mt-2 text-gray-700">UI/UX Designer & Frontend Developer | No/Low code Enthusiast & Open Source Contribution Enthusiast</p>
+        <p className="text-base font-medium mt-2 text-gray-700">Jr. UI/UX Designer & Frontend Developer | No/Low code Enthusiast & Open Source Enthusiast</p>
         <p className="text-sm font-medium mt-4 text-gray-600">© 2026 Aishwarya A Nair. All rights reserved.</p>
       </motion.div>
     </section>
