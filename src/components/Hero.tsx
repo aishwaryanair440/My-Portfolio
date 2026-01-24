@@ -94,7 +94,7 @@ export function Hero() {
               damping: 10
             }}
           >
-           Junior UI/UX Designer & Junior Frontend Developer| No/Low Code & Open Source Contribution Enthusiast
+           Junior UI/UX Designer & Frontend Developer| No/Low Code & Open Source Enthusiast
           </motion.h2>
         </motion.div>
 
