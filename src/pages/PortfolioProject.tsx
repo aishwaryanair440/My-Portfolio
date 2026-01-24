@@ -170,7 +170,9 @@ export function PortfolioProject({ onBack }: PortfolioProjectProps) {
 
             <div className="flex flex-wrap gap-4">
               <motion.a
-                href="/"
+                href="https://aishwaryaanair.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 py-2.5 bg-orange-500 text-white font-bold border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm cursor-pointer"
                 whileHover={{ 
                   x: 2,
