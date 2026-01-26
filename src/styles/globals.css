@@ -129,6 +129,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* Hide default cursor globally for custom cursor */
+  * {
+    cursor: none !important;
+  }
 }
 
 /**
