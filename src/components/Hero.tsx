@@ -1,7 +1,6 @@
-import React from 'react';
-import { Github, Mail, ArrowRight, Sparkles, Briefcase, GraduationCap, FileText, FolderOpen, Code } from 'lucide-react';
+import { Mail, Sparkles, Briefcase, GraduationCap, FileText, FolderOpen, Code } from 'lucide-react';
 import { motion } from 'motion/react';
-import { SpiralElement, ZigzagElement, StarDoodle, ScribbleCircle, ArrowDoodle } from './NeobrutalismElements';
+import { SpiralElement, ZigzagElement, ScribbleCircle, ArrowDoodle } from './NeobrutalismElements';
 import avatarImage from '../assets/ff535893732649ce857b99ce60b597bd18bf6387.png';
 
 export function Hero() {
@@ -84,7 +83,7 @@ export function Hero() {
             Aishwarya A Nair
           </h1>
           <motion.h2
-            className="text-2xl md:text-3xl font-bold text-blue-600"
+            className="text-2xl md:text-3xl font-bold text-blue-700"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -142,7 +141,7 @@ export function Hero() {
         >
           <motion.a
             href="#projects"
-            className="px-8 py-4 bg-blue-600 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-blue-700 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, x: -50, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{
@@ -164,7 +163,7 @@ export function Hero() {
           </motion.a>
           <motion.a
             href="#skills"
-            className="px-8 py-4 bg-green-600 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-green-700 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, y: 50, rotate: 10 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             transition={{
@@ -186,7 +185,7 @@ export function Hero() {
           </motion.a>
           <motion.a
             href="#contact"
-            className="px-8 py-4 bg-pink-600 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-pink-700 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, x: 50, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{

@@ -17,13 +17,13 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
       <CrossDoodle className="absolute bottom-20 right-10 opacity-30 hidden lg:block" size={50} color="#4ADE80" />
       <ZigzagElement className="absolute top-1/3 right-1/4 opacity-30 hidden lg:block" color="#FCD34D" />
       <StarDoodle className="absolute bottom-10 left-20 opacity-30 hidden lg:block" size={60} color="#A78BFA" />
-      
+
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, -10, 0],
           rotate: [0, 5, 0]
         }}
-        transition={{ 
+        transition={{
           duration: 2.5,
           repeat: Infinity,
           ease: "easeInOut"
@@ -31,13 +31,13 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
       >
         <Rocket className="absolute top-20 right-1/3 w-14 h-14 text-orange-400 opacity-30 hidden lg:block" />
       </motion.div>
-      
-      <motion.div 
+
+      <motion.div
         className="flex items-center gap-4 mb-12"
         initial={{ opacity: 0, x: -100, rotate: -5 }}
         whileInView={{ opacity: 1, x: 0, rotate: 0 }}
         viewport={{ once: true, margin: "-100px" }}
-        transition={{ 
+        transition={{
           type: "spring",
           stiffness: 100,
           damping: 15,
@@ -50,7 +50,7 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
         >
           <Layers className="w-10 h-10" />
         </motion.div>
-        <motion.h2 
+        <motion.h2
           className="text-4xl md:text-5xl font-black"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
         initial={{ opacity: 0, x: -100, rotateY: -15 }}
         whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
         viewport={{ once: true, margin: "-50px" }}
-        transition={{ 
+        transition={{
           type: "spring",
           stiffness: 80,
           damping: 15,
@@ -85,7 +85,7 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
           title="SkillSwap"
           subtitle="UI/UX Hackathon Case Study"
           description="SkillSwap is a peer-to-peer skill exchange platform designed during a UI/UX hackathon to enable structured and low-friction learning among college students."
-          color="text-purple-600"
+          color="text-purple-700"
           gradientFrom="from-purple-300"
           gradientVia="via-purple-400"
           gradientTo="to-pink-400"
@@ -98,7 +98,7 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
         initial={{ opacity: 0, x: 100, rotateY: 15 }}
         whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
         viewport={{ once: true, margin: "-50px" }}
-        transition={{ 
+        transition={{
           type: "spring",
           stiffness: 80,
           damping: 15,
@@ -111,7 +111,7 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
           title="Hacktoberfest Contribution"
           subtitle="Open Source · Frontend"
           description="Contributed a UI card component to an open-source repository during Hacktoberfest, involving design, frontend implementation, and successful pull request submission."
-          color="text-green-600"
+          color="text-green-700"
           gradientFrom="from-green-300"
           gradientVia="via-green-400"
           gradientTo="to-teal-500"
@@ -124,7 +124,7 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
         initial={{ opacity: 0, x: -100, rotateY: -15 }}
         whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
         viewport={{ once: true, margin: "-50px" }}
-        transition={{ 
+        transition={{
           type: "spring",
           stiffness: 80,
           damping: 15,
@@ -137,7 +137,7 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
           title="PERSONAL PORTFOLIO WEBSITE"
           subtitle="Personal Portfolio · React · Tailwind CSS"
           description="A bold, modern portfolio website built with React.js and Tailwind CSS, featuring neobrutalism aesthetics, comprehensive Framer Motion animations, and interactive project showcases."
-          color="text-orange-600"
+          color="text-orange-700"
           gradientFrom="from-orange-300"
           gradientVia="via-orange-400"
           gradientTo="to-red-400"
