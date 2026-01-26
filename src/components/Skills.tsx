@@ -9,7 +9,7 @@ export function Skills() {
       icon: Code,
       title: 'FRONTEND',
       color: 'bg-blue-300',
-      items: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Material UI', 'Tailwind CSS', 'Framer Motion']
+      items: ['HTML', 'CSS', 'JavaScript', 'Material UI', 'Tailwind CSS', 'Framer Motion']
     },
     {
       icon: Palette,
