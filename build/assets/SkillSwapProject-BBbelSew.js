@@ -1,4 +1,4 @@
-import{c as a,j as e,m as s}from"./index-Cn8sBKuz.js";import{A as l,P as c,E as r}from"./ProjectCarousel-BoWWf3KH.js";/**
+import{c as a,j as e,m as s}from"./index-CtwvCgux.js";import{A as l,P as c,E as r}from"./ProjectCarousel-BR6nBwSj.js";/**
  * @license lucide-react v0.487.0 - ISC
  *
  * This source code is licensed under the ISC license.
