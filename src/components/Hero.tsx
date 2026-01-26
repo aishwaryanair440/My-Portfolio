@@ -142,7 +142,7 @@ export function Hero() {
         >
           <motion.a
             href="#projects"
-            className="px-8 py-4 bg-blue-500 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-blue-600 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, x: -50, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{ 
@@ -164,7 +164,7 @@ export function Hero() {
           </motion.a>
           <motion.a
             href="#skills"
-            className="px-8 py-4 bg-green-500 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-green-600 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, y: 50, rotate: 10 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             transition={{ 
@@ -186,7 +186,7 @@ export function Hero() {
           </motion.a>
           <motion.a
             href="#contact"
-            className="px-8 py-4 bg-pink-500 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-pink-600 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, x: 50, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{ 
