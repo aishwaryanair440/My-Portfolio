@@ -1,7 +1,8 @@
-import { Mail, Sparkles, Briefcase, GraduationCap, FileText, FolderOpen, Code } from 'lucide-react';
+import React from 'react';
+import { Github, Mail, ArrowRight, Sparkles, Briefcase, GraduationCap, FileText, FolderOpen, Code } from 'lucide-react';
 import { motion } from 'motion/react';
-import { SpiralElement, ZigzagElement, ScribbleCircle, ArrowDoodle } from './NeobrutalismElements';
-import avatarImage from '../assets/ff535893732649ce857b99ce60b597bd18bf6387.png';
+import { SpiralElement, ZigzagElement, StarDoodle, ScribbleCircle, ArrowDoodle } from './NeobrutalismElements';
+import avatarImage from 'figma:asset/ff535893732649ce857b99ce60b597bd18bf6387.png';
 
 export function Hero() {
   return (
@@ -11,53 +12,53 @@ export function Hero() {
       <ScribbleCircle className="absolute bottom-20 left-10 hidden lg:block" size={70} color="#F472B6" />
       <ArrowDoodle className="absolute top-20 left-1/4 hidden lg:block" color="#60A5FA" />
       <ZigzagElement className="absolute bottom-10 right-1/3 hidden lg:block" color="#A78BFA" />
-
-      <motion.div
+      
+      <motion.div 
         className="absolute top-10 right-10 w-20 h-20 bg-yellow-300 border-2 border-black hidden lg:block"
-        animate={{
+        animate={{ 
           rotate: [12, 22, 12],
           y: [0, -10, 0]
         }}
-        transition={{
+        transition={{ 
           duration: 4,
           repeat: Infinity,
           ease: "easeInOut"
         }}
       />
-      <motion.div
+      <motion.div 
         className="absolute bottom-20 left-10 w-16 h-16 rounded-full bg-pink-400 border-2 border-black hidden lg:block"
-        animate={{
+        animate={{ 
           scale: [1, 1.2, 1],
           x: [0, 10, 0]
         }}
-        transition={{
+        transition={{ 
           duration: 3,
           repeat: Infinity,
           ease: "easeInOut"
         }}
       />
-
+      
       <div className="w-full relative z-10">
         {/* Profile Avatar */}
-        <motion.div
+        <motion.div 
           className="flex justify-center mb-8"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <div className="relative">
-            <motion.div
+            <motion.div 
               className="w-40 h-40 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden rounded-full bg-gradient-to-br from-purple-400 via-pink-400 to-orange-400"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
               <img
                 src={avatarImage}
-                alt="Aishwarya A Nair"
+                alt="Aishwarya A Nair - UI/UX Designer and Frontend Developer"
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            <motion.div
+            <motion.div 
               className="absolute -top-2 -right-2 bg-yellow-300 border-2 border-black rounded-full p-2"
               animate={{ rotate: [0, 360] }}
               transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
@@ -68,11 +69,11 @@ export function Hero() {
         </motion.div>
 
         {/* Name and Title */}
-        <motion.div
+        <motion.div 
           className="text-center space-y-4 mb-8"
           initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{
+          transition={{ 
             type: "spring",
             stiffness: 200,
             damping: 15,
@@ -82,23 +83,23 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl font-black leading-tight">
             Aishwarya A Nair
           </h1>
-          <motion.h2
-            className="text-2xl md:text-3xl font-bold text-[#1d4ed8]"
+          <motion.h2 
+            className="text-2xl md:text-3xl font-bold text-blue-600"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
+            transition={{ 
               delay: 0.3,
               type: "spring",
               stiffness: 100,
               damping: 10
             }}
           >
-            Junior UI/UX Designer & Frontend Developer| No/Low Code & Open Source Enthusiast
+            UI/UX Designer & Frontend Developer| No/Low Code & Open Source Contribution Enthusiast
           </motion.h2>
         </motion.div>
 
         {/* Experience & Roles */}
-        <motion.div
+        <motion.div 
           className="flex flex-wrap justify-center gap-4 mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -114,13 +115,13 @@ export function Hero() {
               className={`${badge.color} border-2 border-black px-5 py-3 inline-flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}
               initial={{ opacity: 0, scale: 0, rotate: -180 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{
+              transition={{ 
                 delay: 0.6 + index * 0.15,
                 type: "spring",
                 stiffness: 200,
                 damping: 12
               }}
-              whileHover={{
+              whileHover={{ 
                 y: -5,
                 scale: 1.05,
                 boxShadow: "6px 6px 0px 0px rgba(0,0,0,1)"
@@ -133,7 +134,7 @@ export function Hero() {
         </motion.div>
 
         {/* CTA Buttons */}
-        <motion.div
+        <motion.div 
           className="flex flex-wrap justify-center gap-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -141,16 +142,16 @@ export function Hero() {
         >
           <motion.a
             href="#projects"
-            className="px-8 py-4 bg-[#1d4ed8] text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-blue-500 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, x: -50, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
-            transition={{
+            transition={{ 
               delay: 1.1,
               type: "spring",
               stiffness: 150,
               damping: 10
             }}
-            whileHover={{
+            whileHover={{ 
               x: 3,
               y: 3,
               boxShadow: "3px 3px 0px 0px rgba(0,0,0,1)",
@@ -163,16 +164,16 @@ export function Hero() {
           </motion.a>
           <motion.a
             href="#skills"
-            className="px-8 py-4 bg-[#15803d] text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-green-500 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, y: 50, rotate: 10 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
-            transition={{
+            transition={{ 
               delay: 1.2,
               type: "spring",
               stiffness: 150,
               damping: 10
             }}
-            whileHover={{
+            whileHover={{ 
               x: 3,
               y: 3,
               boxShadow: "3px 3px 0px 0px rgba(0,0,0,1)",
@@ -185,16 +186,16 @@ export function Hero() {
           </motion.a>
           <motion.a
             href="#contact"
-            className="px-8 py-4 bg-[#be185d] text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 bg-pink-500 text-white font-bold text-base border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 cursor-pointer"
             initial={{ opacity: 0, x: 50, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
-            transition={{
+            transition={{ 
               delay: 1.3,
               type: "spring",
               stiffness: 150,
               damping: 10
             }}
-            whileHover={{
+            whileHover={{ 
               x: 3,
               y: 3,
               boxShadow: "3px 3px 0px 0px rgba(0,0,0,1)",
