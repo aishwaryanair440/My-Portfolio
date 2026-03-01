@@ -164,33 +164,6 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                         ))}
                     </div>
 
-                    {/* Dark Patterns List */}
-                    <motion.div
-                        className="bg-white border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 mb-8"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.5 }}
-                    >
-                        <div className="flex items-center gap-3 mb-6">
-                            <AlertTriangle className="w-7 h-7 text-red-600" />
-                            <h2 className="text-2xl font-black text-black">13 DARK PATTERNS EXPOSED</h2>
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-                            {darkPatterns.map((pattern, i) => (
-                                <motion.div
-                                    key={pattern}
-                                    className="bg-gray-900 text-white px-4 py-2.5 border-2 border-black font-bold text-sm flex items-center gap-2"
-                                    initial={{ opacity: 0, x: -10 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: 0.05 * i + 0.6 }}
-                                    whileHover={{ backgroundColor: '#7c3aed', borderColor: '#7c3aed' }}
-                                >
-                                    <span className="text-violet-400 font-black text-xs">{String(i + 1).padStart(2, '0')}</span>
-                                    {pattern}
-                                </motion.div>
-                            ))}
-                        </div>
-                    </motion.div>
 
                     {/* Project Details Row */}
                     <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -247,50 +220,6 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                         </motion.div>
                     </div>
 
-                    {/* Final CTA Strip */}
-                    <motion.div
-                        className="bg-violet-600 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.9 }}
-                    >
-                        <div>
-                            <p className="text-white font-black text-xl mb-1">Ready to be manipulated?</p>
-                            <p className="text-violet-200 text-sm font-medium">Scientific Analysis in Progress…</p>
-                        </div>
-                        <div className="flex gap-4 flex-wrap">
-                            <motion.a
-                                href="https://cursor-anxiety-simulator.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-6 py-3 bg-white text-violet-700 font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
-                                whileHover={{
-                                    x: 2,
-                                    y: 2,
-                                    boxShadow: '2px 2px 0px 0px rgba(0,0,0,1)',
-                                }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                <ExternalLink className="w-4 h-4" />
-                                INITIALIZE PROTOCOL
-                            </motion.a>
-                            <motion.a
-                                href="https://github.com/aishwaryanair440/Cursor-anxiety-simulator-webapp"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-6 py-3 bg-transparent text-white font-black border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.4)] inline-flex items-center gap-2 text-sm"
-                                whileHover={{
-                                    x: 2,
-                                    y: 2,
-                                    boxShadow: '2px 2px 0px 0px rgba(255,255,255,0.4)',
-                                }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                <Github className="w-4 h-4" />
-                                GITHUB
-                            </motion.a>
-                        </div>
-                    </motion.div>
 
                 </motion.div>
             </div>
