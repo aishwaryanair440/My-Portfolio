@@ -34,6 +34,8 @@ export default defineConfig({
       'figma:asset/21df0db79fb08af0aa2d159f624efe10bc1d5e41.png': path.resolve(__dirname, './src/assets/21df0db79fb08af0aa2d159f624efe10bc1d5e41.png'),
       'figma:asset/freshrush_dashboard.png': path.resolve(__dirname, './src/assets/freshrush_dashboard.png'),
       'figma:asset/freshrush_profile.png': path.resolve(__dirname, './src/assets/freshrush_profile.png'),
+      'figma:asset/cursor_protocol01.png': path.resolve(__dirname, './src/assets/cursor_protocol01.png'),
+      'figma:asset/cursor_protocol02.png': path.resolve(__dirname, './src/assets/cursor_protocol02.png'),
       'embla-carousel-react@8.6.0': 'embla-carousel-react',
       'cmdk@1.1.1': 'cmdk',
       'class-variance-authority@0.7.1': 'class-variance-authority',

@@ -1,6 +1,9 @@
 import React from 'react';
 import { ExternalLink, Github, ArrowLeft, MousePointer, Activity, Shield, BarChart3, Zap, Brain, AlertTriangle, Code2 } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ProjectCarousel } from '../components/ProjectCarousel';
+import cursorImage1 from 'figma:asset/cursor_protocol01.png';
+import cursorImage2 from 'figma:asset/cursor_protocol02.png';
 
 interface CursorAnxietyProjectProps {
     onBack: () => void;
@@ -56,6 +59,7 @@ const darkPatterns = [
 ];
 
 export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
+    const carouselImages = [cursorImage1, cursorImage2];
     return (
         <div className="min-h-screen bg-[#FDF6E3] py-20">
             <div className="max-w-7xl mx-auto px-6">
@@ -106,6 +110,16 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                             13 hostile UI sections while your cursor behaviour is silently profiled — rage-clicks,
                             hesitation, velocity — and receive a full cognitive stress analysis at the end.
                         </p>
+
+                        {/* Project Screenshots Carousel */}
+                        <motion.div
+                            className="mb-8"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                        >
+                            <ProjectCarousel images={carouselImages} />
+                        </motion.div>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-wrap gap-4">

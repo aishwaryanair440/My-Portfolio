@@ -78,10 +78,10 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                     transition={{ duration: 0.6 }}
                 >
                     {/* Hero Card */}
-                    <div className="bg-emerald-700 text-white border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12 mb-8">
+                    <div className="bg-emerald-50 text-black border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12 mb-8">
                         <div className="flex items-start gap-4 mb-4">
                             <motion.span
-                                className="text-5xl font-black text-emerald-300"
+                                className="text-5xl font-black text-emerald-600"
                                 initial={{ scale: 0 }}
                                 animate={{ scale: 1 }}
                                 transition={{ type: 'spring', stiffness: 200, delay: 0.2 }}
@@ -90,18 +90,18 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                             </motion.span>
                             <div>
                                 <div className="flex items-center gap-3 mb-1">
-                                    <Leaf className="w-7 h-7 text-emerald-300" />
-                                    <h1 className="text-3xl md:text-4xl font-black leading-tight">
+                                    <Leaf className="w-7 h-7 text-emerald-600" />
+                                    <h1 className="text-3xl md:text-4xl font-black leading-tight text-black">
                                         FreshRush
                                     </h1>
                                 </div>
-                                <p className="text-lg font-medium text-white">
+                                <p className="text-lg font-medium text-gray-800">
                                     Agritech Supply-Chain Urgency System · React · Firebase
                                 </p>
                             </div>
                         </div>
 
-                        <p className="text-base md:text-lg text-white leading-relaxed mb-6 max-w-3xl">
+                        <p className="text-base md:text-lg text-gray-800 leading-relaxed mb-6 max-w-3xl">
                             Real-time produce decay monitoring and buyer matching platform built for farmers to
                             mitigate losses from buyer cancellations. Fully functional with Firebase backend,
                             live countdowns, and Material Design 3 glassmorphism UI.
@@ -123,8 +123,8 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                                 href="https://fresh-rush.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 bg-white text-emerald-700 font-black border-2 border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] inline-flex items-center gap-2 text-sm"
-                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,0.3)' }}
+                                className="px-6 py-3 bg-emerald-600 text-white font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
+                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,1)' }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <ExternalLink className="w-4 h-4" />
@@ -134,8 +134,8 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                                 href="https://github.com/aishwaryanair440/fresh-rush"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 bg-transparent text-white font-black border-2 border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] inline-flex items-center gap-2 text-sm"
-                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,0.3)', backgroundColor: 'rgba(255,255,255,0.1)' }}
+                                className="px-6 py-3 bg-white text-black font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
+                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,1)', backgroundColor: '#f9fafb' }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <Github className="w-4 h-4" />
