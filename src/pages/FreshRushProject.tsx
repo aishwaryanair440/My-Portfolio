@@ -1,6 +1,8 @@
-import React from 'react';
 import { ExternalLink, Github, ArrowLeft, Flame, Database, ShieldCheck, Clock, Users, BarChart2, Leaf, Zap, Code2, Layout, Star } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ProjectCarousel } from '../components/ProjectCarousel';
+import freshRushDashboard from 'figma:asset/freshrush_dashboard.png';
+import freshRushProfile from 'figma:asset/freshrush_profile.png';
 
 interface FreshRushProjectProps {
     onBack: () => void;
@@ -53,6 +55,8 @@ const functionalFeatures = [
 ];
 
 export function FreshRushProject({ onBack }: FreshRushProjectProps) {
+    const carouselImages = [freshRushDashboard, freshRushProfile];
+
     return (
         <div className="min-h-screen bg-[#FDF6E3] py-20">
             <div className="max-w-7xl mx-auto px-6">
@@ -97,11 +101,21 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                             </div>
                         </div>
 
-                        <p className="text-base md:text-lg text-white leading-relaxed mb-8 max-w-3xl">
+                        <p className="text-base md:text-lg text-white leading-relaxed mb-6 max-w-3xl">
                             Real-time produce decay monitoring and buyer matching platform built for farmers to
                             mitigate losses from buyer cancellations. Fully functional with Firebase backend,
                             live countdowns, and Material Design 3 glassmorphism UI.
                         </p>
+
+                        {/* Project Screenshots Carousel */}
+                        <motion.div
+                            className="mb-8"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                        >
+                            <ProjectCarousel images={carouselImages} />
+                        </motion.div>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-wrap gap-4">
@@ -244,22 +258,22 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                     {/* Security + My Role */}
                     <div className="grid md:grid-cols-2 gap-6 mb-8">
                         <motion.div
-                            className="bg-gray-900 text-white border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-6"
+                            className="bg-emerald-100 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-6"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.85 }}
                             whileHover={{ scale: 1.01 }}
                         >
                             <div className="flex items-center gap-2 mb-4">
-                                <ShieldCheck className="w-5 h-5 text-emerald-400" />
-                                <h4 className="text-base font-black text-emerald-300">SECURITY</h4>
+                                <ShieldCheck className="w-5 h-5 text-emerald-700" />
+                                <h4 className="text-base font-black text-black">SECURITY</h4>
                             </div>
-                            <ul className="space-y-2 text-sm font-medium text-gray-300">
-                                <li className="flex items-center gap-2"><span className="text-emerald-400">→</span> User-specific data queries</li>
-                                <li className="flex items-center gap-2"><span className="text-emerald-400">→</span> Firebase Authentication</li>
-                                <li className="flex items-center gap-2"><span className="text-emerald-400">→</span> Firestore security rules</li>
-                                <li className="flex items-center gap-2"><span className="text-emerald-400">→</span> No exposed credentials</li>
-                                <li className="flex items-center gap-2"><span className="text-emerald-400">→</span> Secure password hashing</li>
+                            <ul className="space-y-2 text-sm font-medium text-gray-800">
+                                <li className="flex items-center gap-2"><span className="text-emerald-700 font-bold">→</span> User-specific data queries</li>
+                                <li className="flex items-center gap-2"><span className="text-emerald-700 font-bold">→</span> Firebase Authentication</li>
+                                <li className="flex items-center gap-2"><span className="text-emerald-700 font-bold">→</span> Firestore security rules</li>
+                                <li className="flex items-center gap-2"><span className="text-emerald-700 font-bold">→</span> No exposed credentials</li>
+                                <li className="flex items-center gap-2"><span className="text-emerald-700 font-bold">→</span> Secure password hashing</li>
                             </ul>
                         </motion.div>
 
@@ -282,42 +296,6 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                         </motion.div>
                     </div>
 
-                    {/* Final CTA Strip */}
-                    <motion.div
-                        className="bg-emerald-600 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 1.0 }}
-                    >
-                        <div>
-                            <p className="text-white font-black text-xl mb-1">Built for the Future of Sustainable Agriculture 🌿</p>
-                            <p className="text-white text-sm font-medium">100% Functional · Real Backend · Production Ready</p>
-                        </div>
-                        <div className="flex gap-4 flex-wrap">
-                            <motion.a
-                                href="https://fresh-rush.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-6 py-3 bg-white text-emerald-700 font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
-                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,1)' }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                <ExternalLink className="w-4 h-4" />
-                                LIVE DEMO
-                            </motion.a>
-                            <motion.a
-                                href="https://github.com/aishwaryanair440/fresh-rush"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-6 py-3 bg-transparent text-white font-black border-2 border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] inline-flex items-center gap-2 text-sm"
-                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,0.3)' }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                <Github className="w-4 h-4" />
-                                GITHUB
-                            </motion.a>
-                        </div>
-                    </motion.div>
 
                 </motion.div>
             </div>
