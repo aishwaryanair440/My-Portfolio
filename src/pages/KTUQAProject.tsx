@@ -70,10 +70,10 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                     transition={{ duration: 0.6 }}
                 >
                     {/* Hero Card */}
-                    <div className="bg-slate-900 text-white border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12 mb-8">
+                    <div className="bg-white border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12 mb-8">
                         <div className="flex items-start gap-4 mb-4">
                             <motion.span
-                                className="text-5xl font-black text-blue-400"
+                                className="text-5xl font-black text-blue-600"
                                 initial={{ scale: 0 }}
                                 animate={{ scale: 1 }}
                                 transition={{ type: 'spring', stiffness: 200, delay: 0.2 }}
@@ -82,18 +82,18 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                             </motion.span>
                             <div>
                                 <div className="flex items-center gap-3 mb-1">
-                                    <Monitor className="w-7 h-7 text-blue-400" />
-                                    <h1 className="text-3xl md:text-4xl font-black leading-tight">
+                                    <Monitor className="w-7 h-7 text-blue-600" />
+                                    <h1 className="text-3xl md:text-4xl font-black leading-tight text-black">
                                         KTU Website QA Audit
                                     </h1>
                                 </div>
-                                <p className="text-lg font-medium text-slate-300">
+                                <p className="text-lg font-medium text-gray-700">
                                     Quality Assurance · Lighthouse · Accessibility · Performance
                                 </p>
                             </div>
                         </div>
 
-                        <p className="text-base md:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl">
+                        <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8 max-w-3xl">
                             A comprehensive non-functional quality assurance audit of the official KTU
                             (Kerala Technological University) website using Lighthouse. Testing covered
                             performance, accessibility, best practices, and SEO — with detailed findings
@@ -106,8 +106,8 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                                 href="https://www.pdffiller.com/s/gWTEv-8C"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 bg-blue-500 text-white font-black border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] inline-flex items-center gap-2 text-sm"
-                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(255,255,255,0.3)' }}
+                                className="px-6 py-3 bg-blue-600 text-white font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
+                                whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,1)' }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <FileText className="w-4 h-4" />
