@@ -91,13 +91,13 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                                         FreshRush
                                     </h1>
                                 </div>
-                                <p className="text-lg font-medium text-emerald-100">
+                                <p className="text-lg font-medium text-white">
                                     Agritech Supply-Chain Urgency System · React · Firebase
                                 </p>
                             </div>
                         </div>
 
-                        <p className="text-base md:text-lg text-emerald-100 leading-relaxed mb-8 max-w-3xl">
+                        <p className="text-base md:text-lg text-white leading-relaxed mb-8 max-w-3xl">
                             Real-time produce decay monitoring and buyer matching platform built for farmers to
                             mitigate losses from buyer cancellations. Fully functional with Firebase backend,
                             live countdowns, and Material Design 3 glassmorphism UI.
@@ -143,9 +143,9 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                             >
                                 <div className="flex items-center gap-3 mb-3">
                                     <feat.icon className={`w-7 h-7 ${feat.iconColor}`} />
-                                    <h3 className="text-lg font-black">{feat.title}</h3>
+                                    <h3 className="text-lg font-black text-black">{feat.title}</h3>
                                 </div>
-                                <p className="text-sm font-medium text-gray-700 leading-relaxed">{feat.description}</p>
+                                <p className="text-sm font-medium text-gray-800 leading-relaxed">{feat.description}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -159,7 +159,7 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <Star className="w-7 h-7 text-emerald-600" />
-                            <h2 className="text-2xl font-black">100% FUNCTIONAL FEATURES</h2>
+                            <h2 className="text-2xl font-black text-black">100% FUNCTIONAL FEATURES</h2>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
                             {functionalFeatures.map((f, i) => (
@@ -173,9 +173,9 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                                 >
                                     <div className="flex items-center gap-2 mb-1">
                                         <span className="text-emerald-600 font-black text-xs">✅</span>
-                                        <span className="font-black text-sm">{f.name}</span>
+                                        <span className="font-black text-sm text-black">{f.name}</span>
                                     </div>
-                                    <p className="text-xs text-gray-600 font-medium">{f.desc}</p>
+                                    <p className="text-xs text-gray-700 font-medium">{f.desc}</p>
                                 </motion.div>
                             ))}
                         </div>
@@ -193,7 +193,7 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-4">
                                 <Code2 className="w-5 h-5 text-blue-600" />
-                                <h4 className="text-base font-black">FRONTEND</h4>
+                                <h4 className="text-base font-black text-black">FRONTEND</h4>
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {frontendStack.map((t) => (
@@ -212,7 +212,7 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-4">
                                 <Database className="w-5 h-5 text-orange-600" />
-                                <h4 className="text-base font-black">BACKEND</h4>
+                                <h4 className="text-base font-black text-black">BACKEND</h4>
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {backendStack.map((t) => (
@@ -231,7 +231,7 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-4">
                                 <BarChart2 className="w-5 h-5 text-purple-600" />
-                                <h4 className="text-base font-black">DESIGN</h4>
+                                <h4 className="text-base font-black text-black">DESIGN</h4>
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {designStack.map((t) => (
@@ -274,7 +274,7 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                                 <Zap className="w-5 h-5 text-emerald-600" />
                                 <h4 className="text-base font-black">MY ROLE</h4>
                             </div>
-                            <p className="text-sm font-medium text-gray-700 leading-relaxed">
+                            <p className="text-sm font-medium text-gray-800 leading-relaxed">
                                 Solo full-stack build — concept, Firebase architecture, real-time Firestore
                                 integration, Material Design 3 UI system, glassmorphism, Framer Motion
                                 animations, buyer matching algorithm, and production deployment on Vercel.
@@ -291,7 +291,7 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                     >
                         <div>
                             <p className="text-white font-black text-xl mb-1">Built for the Future of Sustainable Agriculture 🌿</p>
-                            <p className="text-emerald-200 text-sm font-medium">100% Functional · Real Backend · Production Ready</p>
+                            <p className="text-white text-sm font-medium">100% Functional · Real Backend · Production Ready</p>
                         </div>
                         <div className="flex gap-4 flex-wrap">
                             <motion.a

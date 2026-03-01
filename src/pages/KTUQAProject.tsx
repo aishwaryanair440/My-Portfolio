@@ -125,7 +125,7 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <FileText className="w-7 h-7 text-slate-700" />
-                            <h2 className="text-2xl font-black">WHAT WAS AUDITED</h2>
+                            <h2 className="text-2xl font-black text-black">WHAT WAS AUDITED</h2>
                         </div>
                         <div className="grid md:grid-cols-3 gap-4 mb-4">
                             <div className="bg-slate-50 border-2 border-black p-4">
@@ -156,11 +156,11 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                             >
                                 <div className="flex items-center gap-3 mb-4">
                                     <cat.icon className={`w-7 h-7 ${cat.iconColor}`} />
-                                    <h3 className="text-lg font-black">{cat.label}</h3>
+                                    <h3 className="text-lg font-black text-black">{cat.label}</h3>
                                 </div>
                                 <ul className="space-y-2">
                                     {cat.issues.map((issue) => (
-                                        <li key={issue} className="flex items-start gap-2 text-sm font-medium text-gray-700">
+                                        <li key={issue} className="flex items-start gap-2 text-sm font-medium text-gray-800">
                                             <AlertTriangle className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
                                             {issue}
                                         </li>
@@ -179,7 +179,7 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <CheckCircle className="w-7 h-7 text-green-600" />
-                            <h2 className="text-2xl font-black">RECOMMENDATIONS</h2>
+                            <h2 className="text-2xl font-black text-black">RECOMMENDATIONS</h2>
                         </div>
                         <div className="grid md:grid-cols-2 gap-4">
                             {recommendations.map((r, i) => (
@@ -193,9 +193,9 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                                 >
                                     <div className="flex items-start gap-2 mb-1">
                                         <span className="bg-black text-white px-1.5 py-0.5 text-xs font-black flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
-                                        <h5 className="font-black text-sm">{r.title}</h5>
+                                        <h5 className="font-black text-sm text-black">{r.title}</h5>
                                     </div>
-                                    <p className="text-xs text-gray-600 font-medium ml-8">{r.detail}</p>
+                                    <p className="text-xs text-gray-700 font-medium ml-8">{r.detail}</p>
                                 </motion.div>
                             ))}
                         </div>
@@ -212,7 +212,7 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-4">
                                 <Zap className="w-5 h-5 text-blue-600" />
-                                <h4 className="text-base font-black">TOOLS USED</h4>
+                                <h4 className="text-base font-black text-black">TOOLS USED</h4>
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {tools.map((t) => (
@@ -230,9 +230,9 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-4">
                                 <Monitor className="w-5 h-5 text-slate-700" />
-                                <h4 className="text-base font-black">MY ROLE</h4>
+                                <h4 className="text-base font-black text-black">MY ROLE</h4>
                             </div>
-                            <p className="text-sm font-medium text-gray-700 leading-relaxed">
+                            <p className="text-sm font-medium text-gray-800 leading-relaxed">
                                 Solo QA analyst — ran Lighthouse audits across multiple pages, manually
                                 verified accessibility findings, documented all issues with evidence
                                 screenshots, and compiled a structured PDF report with prioritised
@@ -250,7 +250,7 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                     >
                         <div>
                             <p className="text-white font-black text-xl mb-1">Read the Full Audit Report</p>
-                            <p className="text-slate-400 text-sm font-medium">Detailed findings, scores, and actionable improvements</p>
+                            <p className="text-slate-200 text-sm font-medium">Detailed findings, scores, and actionable improvements</p>
                         </div>
                         <motion.a
                             href="https://www.pdffiller.com/s/gWTEv-8C"

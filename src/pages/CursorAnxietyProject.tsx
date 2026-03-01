@@ -95,13 +95,13 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                                 <h1 className="text-3xl md:text-4xl font-black mb-1 leading-tight">
                                     Cursor Anxiety Simulator
                                 </h1>
-                                <p className="text-lg font-medium text-gray-300">
+                                <p className="text-lg font-medium text-gray-200">
                                     Interactive Dark Patterns Experience · React · TypeScript
                                 </p>
                             </div>
                         </div>
 
-                        <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-8 max-w-3xl">
+                        <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-8 max-w-3xl">
                             An interactive deep-dive into the Dark Patterns that define the modern web. Navigate
                             13 hostile UI sections while your cursor behaviour is silently profiled — rage-clicks,
                             hesitation, velocity — and receive a full cognitive stress analysis at the end.
@@ -157,9 +157,9 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                             >
                                 <div className="flex items-center gap-3 mb-3">
                                     <feat.icon className={`w-7 h-7 ${feat.iconColor}`} />
-                                    <h3 className="text-lg font-black">{feat.title}</h3>
+                                    <h3 className="text-lg font-black text-black">{feat.title}</h3>
                                 </div>
-                                <p className="text-sm font-medium text-gray-700 leading-relaxed">{feat.description}</p>
+                                <p className="text-sm font-medium text-gray-800 leading-relaxed">{feat.description}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -173,7 +173,7 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <AlertTriangle className="w-7 h-7 text-red-600" />
-                            <h2 className="text-2xl font-black">13 DARK PATTERNS EXPOSED</h2>
+                            <h2 className="text-2xl font-black text-black">13 DARK PATTERNS EXPOSED</h2>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                             {darkPatterns.map((pattern, i) => (
@@ -203,9 +203,9 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-3">
                                 <Brain className="w-5 h-5 text-violet-600" />
-                                <h4 className="text-base font-black">PURPOSE</h4>
+                                <h4 className="text-base font-black text-black">PURPOSE</h4>
                             </div>
-                            <p className="text-sm font-medium text-gray-700 leading-relaxed">
+                            <p className="text-sm font-medium text-gray-800 leading-relaxed">
                                 Raise awareness of manipulative UI/UX dark patterns by putting users through them
                                 live — so they recognise and resist them in the wild.
                             </p>
@@ -220,7 +220,7 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-3">
                                 <Code2 className="w-5 h-5 text-pink-600" />
-                                <h4 className="text-base font-black">TECH STACK</h4>
+                                <h4 className="text-base font-black text-black">TECH STACK</h4>
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {techStack.map((t) => (
@@ -238,9 +238,9 @@ export function CursorAnxietyProject({ onBack }: CursorAnxietyProjectProps) {
                         >
                             <div className="flex items-center gap-2 mb-3">
                                 <Zap className="w-5 h-5 text-red-600" />
-                                <h4 className="text-base font-black">MY ROLE</h4>
+                                <h4 className="text-base font-black text-black">MY ROLE</h4>
                             </div>
-                            <p className="text-sm font-medium text-gray-700 leading-relaxed">
+                            <p className="text-sm font-medium text-gray-800 leading-relaxed">
                                 Solo build — concept, design, dark-pattern research, full-stack implementation,
                                 behavioural tracking logic, and deployment.
                             </p>
