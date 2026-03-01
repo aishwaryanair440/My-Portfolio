@@ -1,5 +1,4 @@
-import React from 'react';
-import { ExternalLink, ArrowLeft, AlertTriangle, CheckCircle, Gauge, Eye, Shield, Search, FileText, Zap, Monitor } from 'lucide-react';
+import { ArrowLeft, AlertTriangle, CheckCircle, Gauge, Eye, Shield, Search, FileText, Zap, Monitor } from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface KTUQAProjectProps {
@@ -106,7 +105,7 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                                 href="https://www.pdffiller.com/s/gWTEv-8C"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 bg-blue-600 text-white font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
+                                className="px-6 py-3 bg-blue-400 text-black font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
                                 whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,1)' }}
                                 whileTap={{ scale: 0.95 }}
                             >
@@ -241,29 +240,6 @@ export function KTUQAProject({ onBack }: KTUQAProjectProps) {
                         </motion.div>
                     </div>
 
-                    {/* Final CTA Strip */}
-                    <motion.div
-                        className="bg-slate-800 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 1.0 }}
-                    >
-                        <div>
-                            <p className="text-white font-black text-xl mb-1">Read the Full Audit Report</p>
-                            <p className="text-slate-200 text-sm font-medium">Detailed findings, scores, and actionable improvements</p>
-                        </div>
-                        <motion.a
-                            href="https://www.pdffiller.com/s/gWTEv-8C"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-6 py-3 bg-blue-500 text-white font-black border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] inline-flex items-center gap-2 text-sm flex-shrink-0"
-                            whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(255,255,255,0.3)' }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <FileText className="w-4 h-4" />
-                            VIEW REPORT PDF
-                        </motion.a>
-                    </motion.div>
 
                 </motion.div>
             </div>
