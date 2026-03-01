@@ -123,11 +123,11 @@ export function FreshRushProject({ onBack }: FreshRushProjectProps) {
                                 href="https://fresh-rush.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 bg-emerald-600 text-white font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
+                                className="px-6 py-3 bg-emerald-400 text-black font-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-flex items-center gap-2 text-sm"
                                 whileHover={{ x: 2, y: 2, boxShadow: '2px 2px 0px 0px rgba(0,0,0,1)' }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <ExternalLink className="w-4 h-4" />
+                                <ExternalLink className="w-4 h-4 text-black" />
                                 LIVE DEMO →
                             </motion.a>
                             <motion.a
