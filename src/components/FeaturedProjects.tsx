@@ -171,6 +171,58 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
           onClick={() => onProjectClick('cursoranxiety')}
         />
       </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, x: -100, rotateY: -15 }}
+        whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{
+          type: "spring",
+          stiffness: 80,
+          damping: 15,
+          duration: 0.8,
+          delay: 0.8
+        }}
+      >
+        <ProjectCard
+          number="05"
+          title="FRESHRUSH"
+          subtitle="Agritech Supply-Chain Urgency System · React · Firebase"
+          description="Real-time produce decay monitoring and buyer matching platform for farmers to mitigate losses from buyer cancellations. Fully functional with Firebase backend, live HH:MM:SS countdowns, and Material Design 3 glassmorphism UI."
+          color="text-[#059669]"
+          gradientFrom="from-emerald-300"
+          gradientVia="via-green-400"
+          gradientTo="to-teal-500"
+          tags={['React', 'Firebase', 'Firestore', 'Material Design 3']}
+          onClick={() => onProjectClick('freshrush')}
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, x: 100, rotateY: 15 }}
+        whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{
+          type: "spring",
+          stiffness: 80,
+          damping: 15,
+          duration: 0.8,
+          delay: 1.0
+        }}
+      >
+        <ProjectCard
+          number="06"
+          title="KTU WEBSITE QA AUDIT"
+          subtitle="Quality Assurance · Lighthouse · Accessibility · SEO"
+          description="A comprehensive non-functional QA audit of the official KTU website using Google Lighthouse. Identified critical issues in performance, accessibility, best practices, and SEO — with a full report and actionable recommendations."
+          color="text-[#1e40af]"
+          gradientFrom="from-blue-300"
+          gradientVia="via-slate-400"
+          gradientTo="to-indigo-500"
+          tags={['QA Testing', 'Lighthouse', 'Accessibility', 'SEO']}
+          onClick={() => onProjectClick('ktuqa')}
+        />
+      </motion.div>
     </section>
   );
 }
