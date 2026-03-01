@@ -13,6 +13,7 @@ import { CustomCursor } from './components/CustomCursor';
 const SkillSwapProject = React.lazy(() => import('./pages/SkillSwapProject').then(module => ({ default: module.SkillSwapProject })));
 const HacktoberfestProject = React.lazy(() => import('./pages/HacktoberfestProject').then(module => ({ default: module.HacktoberfestProject })));
 const PortfolioProject = React.lazy(() => import('./pages/PortfolioProject').then(module => ({ default: module.PortfolioProject })));
+const CursorAnxietyProject = React.lazy(() => import('./pages/CursorAnxietyProject').then(module => ({ default: module.CursorAnxietyProject })));
 
 const PageLoader = () => (
   <div className="min-h-screen bg-[#FDF6E3] flex items-center justify-center">
@@ -21,7 +22,7 @@ const PageLoader = () => (
 );
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'skillswap' | 'hacktoberfest' | 'portfolio'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'skillswap' | 'hacktoberfest' | 'portfolio' | 'cursoranxiety'>('home');
 
   const handleProjectClick = (projectId: string) => {
     if (projectId === 'skillswap') {
@@ -30,6 +31,8 @@ export default function App() {
       setCurrentPage('hacktoberfest');
     } else if (projectId === 'portfolio') {
       setCurrentPage('portfolio');
+    } else if (projectId === 'cursoranxiety') {
+      setCurrentPage('cursoranxiety');
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -67,6 +70,17 @@ export default function App() {
         <div className="min-h-screen bg-[#FDF6E3] cursor-none">
           <CustomCursor />
           <PortfolioProject onBack={handleBackToHome} />
+        </div>
+      </Suspense>
+    );
+  }
+
+  if (currentPage === 'cursoranxiety') {
+    return (
+      <Suspense fallback={<PageLoader />}>
+        <div className="min-h-screen bg-[#FDF6E3] cursor-none">
+          <CustomCursor />
+          <CursorAnxietyProject onBack={handleBackToHome} />
         </div>
       </Suspense>
     );

@@ -145,6 +145,32 @@ export function FeaturedProjects({ onProjectClick }: FeaturedProjectsProps) {
           onClick={() => onProjectClick('portfolio')}
         />
       </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, x: 100, rotateY: 15 }}
+        whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{
+          type: "spring",
+          stiffness: 80,
+          damping: 15,
+          duration: 0.8,
+          delay: 0.6
+        }}
+      >
+        <ProjectCard
+          number="04"
+          title="CURSOR ANXIETY SIMULATOR"
+          subtitle="Interactive Dark Patterns Experience · React · TypeScript"
+          description="An interactive deep-dive into the Dark Patterns that define the modern web. Navigate 13 hostile UI sections while your cursor behaviour is silently profiled — and receive a full cognitive stress analysis."
+          color="text-[#7c3aed]"
+          gradientFrom="from-violet-400"
+          gradientVia="via-purple-500"
+          gradientTo="to-indigo-600"
+          tags={['React', 'TypeScript', 'Dark Patterns', 'Vercel']}
+          onClick={() => onProjectClick('cursoranxiety')}
+        />
+      </motion.div>
     </section>
   );
 }
